@@ -1,21 +1,25 @@
 
 .App-heading-wrapper {
-  background-image: url('/background-test.svg');
-  background-repeat: space;
-  width: 1440px;
+  // background-image: url('/background-test.svg');
+  // background-repeat: space;
+  // background: linear-gradient(217.99deg, #FF87C7 37.78%, #FFBD60 95.77%);
+
+  width: 100vw;
   height: 884px;
+}
 
-  .heading-container {
-    padding: 234px 0 0 190px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.heading-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 234px 0 0 190px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-    @media only screen and (max-width: 900px) {
-      padding: 234px 60px;
-      align-items: flex-start;
-      width: 100vw;
-    }
+  @media only screen and (max-width: 900px) {
+    padding: 234px 60px;
+    align-items: flex-start;
+    width: 100vw;
   }
 }
 
@@ -28,6 +32,7 @@
 
   letter-spacing: 1.08333px;
   color: #FFFFFF;
+  z-index: 2;
 }
 
 .App-subheading {
@@ -43,6 +48,7 @@
   letter-spacing: 0.466667px;
 
   color: #FFFFFF;
+  z-index: 2;
 
   @media only screen and (max-width: 925px) {
     width: 538px;
@@ -61,20 +67,57 @@
   overflow: visible;
 }
 
+.App-hero-wrapper {
+  position: absolute;
+  // max-width: 1440px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.App-buildings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/buildings.svg');
+  height: 884px;
+  width: 100%;
+  z-index: 1;
+
+  @media only screen and (min-width: 1441px) {
+    background-image: url('/buildings-big.svg');
+  }
+}
+
+.App-swoosh {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url('/swoosh.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 225px;
+  top: 720px;
+  z-index: 2;
+}
+
 .App-hero-robot {
   position: absolute;
+  left: 0;
+  right: 0;
   top: 430px;
-  // left: 1067px;
-  right: 20px;
   height: 576px;
-  width: 352px;
+  width: 100%;
   background-image: url('/hero-robot.svg');
-  z-index: 2;
-
-  @media only screen and (max-width: 1260px) {
-    left: 890px;
-    right: unset;
-  }
+  z-index: 3;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 500px;
 
   @media only screen and (max-width: 719px) {
     background-image: url('/robot-mobile.svg');
@@ -84,10 +127,6 @@
     top: 544px;
     right: 20px;
     left: unset;
-  }
-
-  @media only screen and (max-width: 320px) {
-    left: 178px;
   }
 }
 

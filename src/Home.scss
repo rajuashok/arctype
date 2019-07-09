@@ -1,7 +1,7 @@
 .Home-wrapper {
   position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
+  // max-width: 1440px;
+  // margin: 0 auto;
   border-left: solid 1px #F2F2F2;
   border-right: solid 1px #F2F2F2;
   overflow-x: hidden;
@@ -13,6 +13,8 @@
 }
 
 .Footer {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -106,6 +108,8 @@
 
 
 .Header {
+  max-width: 1440px;
+  margin: 0 auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -113,6 +117,7 @@
   padding: 46px 185px 0 185px;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .Header-items {
@@ -176,6 +181,7 @@
   padding: 0 60px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
   @media only screen and (max-width: 630px) {
     top: 20px;
     padding: 0 20px;

@@ -87,8 +87,9 @@ class App extends Component {
   renderTop = () => {
     return (
       <div>
-        <MediaQuery query="(min-width: 720px)">
-          <div className="App-heading-wrapper">
+        {/* <MediaQuery query="(min-width: 1441px)">
+          <div className="App-heading-wrapper"/>
+          <div className="App-hero-wrapper">
             <div className="heading-container">
               <div className="App-heading">
                 Full-stack Machine Learning
@@ -97,6 +98,23 @@ class App extends Component {
                 Powerful tools and solutions for machine learning and data science
               </div>
             </div>
+            <div className="App-buildings"/>
+            <div className="App-hero-robot"/>
+          </div>
+        </MediaQuery> */}
+        <MediaQuery query="(min-width: 720px)">
+          <div className="App-heading-wrapper"/>
+          <div className="App-hero-wrapper">
+            <div className="heading-container">
+              <div className="App-heading">
+                Full-stack Machine Learning
+              </div>
+              <div className="App-subheading">
+                Powerful tools and solutions for machine learning and data science
+              </div>
+            </div>
+            <div className="App-buildings"/>
+            <div className="App-hero-robot"/>
           </div>
         </MediaQuery>
         <MediaQuery query="(max-width: 719px)">
@@ -109,6 +127,7 @@ class App extends Component {
                 Powerful tools for machine learning and data science
               </div>
             </div>
+            <div className="App-hero-robot"/>
           </div>
         </MediaQuery>
       </div>
@@ -188,7 +207,6 @@ class App extends Component {
     return (
       <div>
         {this.renderTop()}
-        <div className="App-hero-robot"/>
         {this.renderFeatures()}
         {this.renderBottomBox()}
       </div>);
