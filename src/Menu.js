@@ -13,7 +13,7 @@ export class MenuItem extends Component {
   render() {
     const { title, description, icon, disabled } = this.props;
     return (
-      <div className="Menu-item">
+      <div className="Menu-item" onClick={() => {}}>
         <div className="icon" style={{opacity: disabled ? 0.5 : 1}}><img height={108} width={108} src={icon}/></div>
         <div className="text" style={{opacity: disabled ? 0.5 : 1}}>
           <div className="title">{title}</div>
