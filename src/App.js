@@ -69,7 +69,7 @@ class Feature extends Component {
   render() {
     const { title, icon, description, disabled } = this.props;
     return (
-      <div className="Feature-box">
+      <div className={cx("Feature-box", {"small": icon == "/ml-icon.svg"})}>
         <div className="title">{title}</div>
         <div className="icon"><img src={icon}/></div>
         <div className="description">{description}</div>

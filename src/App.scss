@@ -253,6 +253,10 @@
     margin: 0 0 20px 0;
     width: 280px;
     height: 457px;
+
+    &.small {
+      height: 427px;
+    }
   }
 
   .title {
@@ -295,21 +299,41 @@
     .feat-margin-sql {
       padding-left: 32px;
       padding-right: 32px;
+
+      @media only screen and (max-width: 412px) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
     }
 
     .feat-margin-dataprep {
       padding-left: 37px;
       padding-right: 36px;
+
+      @media only screen and (max-width: 412px) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
     }
 
     .feat-margin-dataset {
       padding-left: 40px;
       padding-right: 41px;
+
+      @media only screen and (max-width: 412px) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
     }
 
     .feat-margin-ml {
       padding-left: 31px;
       padding-right: 32px;
+
+      @media only screen and (max-width: 412px) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
     }
 
     @media only screen and (max-width: 1200px) {
@@ -321,7 +345,6 @@
       font-size: 13px;
       line-height: 28px;
       letter-spacing: 0.763225px;
-      margin: 14.19px 25px 0 25px;
     }
   }
 
